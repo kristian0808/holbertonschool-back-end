@@ -1,11 +1,24 @@
 #!/usr/bin/python3
+"""
+This script fetches todo tasks for a given employee id from the JSON
+Placeholder API and exports them to a JSON file.
+
+Usage:
+    python3 2-export_to_JSON.py <employee_id>
+
+Args:
+    employee_id (int): The id of the employee whose tasks to fetch.
+
+Examples:
+    python3 2-export_to_JSON.py 1
+"""
 
 import requests
 import sys
 import json
 
 if len(sys.argv) != 2:
-    print("Usage: python3 todo_progress.py <employee_id>")
+    print("Usage: python3 2-export_to_JSON.py <employee_id>")
     sys.exit(1)
 
 employee_id = sys.argv[1]
