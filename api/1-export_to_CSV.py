@@ -1,11 +1,31 @@
 #!/usr/bin/python3
+"""
+This script fetches todo tasks for a given employee id from the JSON
+Placeholder API and exports them to a CSV file.
+
+Usage:
+    python3 1-export_to_CSV.py <employee_id>
+
+Args:
+    employee_id (int): The id of the employee whose tasks to fetch.
+
+Examples:
+    python3 1-export_to_CSV.py 1
+
+Output:
+    The CSV file named <employee_id>.csv containing the following columns:
+        - employee_id (int): The id of the employee.
+        - employee_name (str): The username of the employee.
+        - completed (bool): The completion status of the todo.
+        - title (str): The title of the todo.
+"""
 
 import requests
 import sys
 import csv
 
 if len(sys.argv) != 2:
-    print("Usage: python3 todo_progress.py <employee_id>")
+    print("Usage: python3 1-export_to_CSV.py <employee_id>")
     sys.exit(1)
 
 employee_id = sys.argv[1]
