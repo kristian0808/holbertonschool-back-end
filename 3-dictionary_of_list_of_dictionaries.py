@@ -31,4 +31,4 @@ for user in users:
     todo_all_employees[user_id] = user_todos
 
 with open("todo_all_employees.json", "w") as file:
-    json.dump(todo_all_employees, file)
+    json.dump(todo_all_employees, file, indent=4)
