@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+"""
+This script fetches the list of users from the JSON Placeholder API
+and creates a dictionary where each key is the user id and
+each value is a list of dictionaries containing the user's username,
+the task title and the completion status of each task.
+
+The result is saved to a JSON file named todo_all_employees.json
+"""
 
 import requests
 import json
