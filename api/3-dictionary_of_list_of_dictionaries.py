@@ -8,8 +8,8 @@ the task title and the completion status of each task.
 The result is saved to a JSON file named todo_all_employees.json
 """
 
-import requests
 import json
+import requests
 
 url = "https://jsonplaceholder.typicode.com/users"
 
