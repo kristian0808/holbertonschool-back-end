@@ -20,9 +20,9 @@ Output:
         - title (str): The title of the todo.
 """
 
+import csv
 import requests
 import sys
-import csv
 
 if len(sys.argv) != 2:
     print("Usage: python3 1-export_to_CSV.py <employee_id>")
