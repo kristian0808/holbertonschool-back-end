@@ -13,8 +13,8 @@ Examples:
     python3 2-export_to_JSON.py 1
 """
 
-import requests
 import json
+import requests
 import sys
 
 if len(sys.argv) != 2:
