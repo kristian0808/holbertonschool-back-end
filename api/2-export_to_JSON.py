@@ -14,8 +14,8 @@ Examples:
 """
 
 import requests
-import sys
 import json
+import sys
 
 if len(sys.argv) != 2:
     print("Usage: python3 2-export_to_JSON.py <employee_id>")
