@@ -42,4 +42,5 @@ employee_name = employee_request.json()["username"]
 with open("{}.csv".format(employee_id), "w", newline="") as file:
     writer = csv.writer(file, quoting=csv.QUOTE_ALL)
     for todo in todos:
-        writer.writerow([employee_id, employee_name, todo["completed"], todo["title"]])
+        writer.writerow(
+            [employee_id, employee_name, todo["completed"], todo["title"]])
